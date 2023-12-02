@@ -57,7 +57,7 @@ public class Admin {
         	
         	switch(OP) {
     		case 1:
-    			System.out.println("\\n+------- Manage Product -------+\\n");
+    			System.out.println("\n+------- Manage Product -------+\n");
     			//---------------------------------------
     			System.out.println("1) Add Products");
     			System.out.println("2) Update Products");
@@ -69,13 +69,13 @@ public class Admin {
     			if(Min == 1) {
     				System.out.print("Product Name: ");
     				String PName = Operation.nextLine();
-    				System.out.print("\nProduct Descreption: ");
+    				System.out.print("Product Descreption: ");
     				String PDescreption = Operation.nextLine();
-    				System.out.print("\nProduct Quantity: ");
+    				System.out.print("Product Quantity: ");
     				int PQuantity = Operation.nextInt();
-    				System.out.print("\nProduct Price: ");
+    				System.out.print("Product Price: ");
     				int PPrice = Operation.nextInt();
-    				System.out.print("\nProduct Category: ");
+    				System.out.print("Product Category: ");
     				String PCategory = Operation.nextLine();
     				productList.add(new Product(PName, PDescreption, PQuantity, PPrice, PCategory));
     				System.out.println("\nAdded Successfuly");
@@ -93,7 +93,7 @@ public class Admin {
     			}
     			break;
     		case 2:
-    			System.out.println("\\n+------- Manage Categories -------+\\n");
+    			System.out.println("\n+------- Manage Categories -------+\n");
     			System.out.println("Add Categories");
     			System.out.println("Edit Categories");
     			System.out.println("Delete Categories");
@@ -127,11 +127,38 @@ public class Admin {
     			}
     			break;
     		case 3:
-    			System.out.println("Manage Customers:");
+    			System.out.println("\n+------- Manage Customer -------+\n");
+    			System.out.println("1) View Customers");
+    			System.out.println("2) Add Customer");
+    			System.out.println("3) Delete Customer");
+    			Scanner ManageCustomer = new Scanner(System.in);
+    			Scanner CustomerOperation = new Scanner(System.in);
+    			ArrayList<Customer> CustomerList = new ArrayList<Customer>();
+    			int MCustomer = ManageCustomer.nextInt();
+    			if(MCustomer == 1) {
+    				
+    			}else if(MCustomer == 2) {
+    				System.out.print("\nEnter the name of Customer: ");
+    				String CustomerName = CustomerOperation.nextLine();
+    				System.out.print("\nEnter the Email of Customer: ");
+    				String CustomerEmail = CustomerOperation.nextLine();
+    				System.out.print("\nEnter the password of Customer: ");
+    				int CustomerPassword = CustomerOperation.nextInt();
+    				CustomerList.add(new Customer(CustomerName,CustomerEmail,CustomerPassword));
+    				System.out.println("Added Successfuly");
+    			}else if(MCustomer == 3) {
+    				System.out.print("\nEnter the name of Customer do you want to delete: ");
+    				String DeleteCustomer = CustomerOperation.nextLine();
+    				Customer CustomerToDelete = new Customer(DeleteCustomer);
+    				CustomerList.remove(CustomerToDelete);
+    				System.out.println("Delete successfuly");
+    			}else
+    				System.out.println("Invalid Input");
     			break;
     		case 4:
     			System.out.println("Manage Installation:");
     		case 5:
+    			System.out.println("Thanks for Using Our Application");
     			System.exit(0);
     		}
 		}
