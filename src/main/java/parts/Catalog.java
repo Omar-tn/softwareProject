@@ -247,6 +247,9 @@ public class Catalog {
         Storage.installationRequests.add(request);
 
         System.out.println("Your installation request has been submitted and is awaiting confirmation.");
+
+        request.email();
+
     }
 
 
