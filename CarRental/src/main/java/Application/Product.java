@@ -8,10 +8,7 @@ public class Product {
 	private String CategoryName;
 	
 	
-	public Product() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+	
 	public Product(String name, String descreption, int quantity, int price, String categoryName) {
 		super();
 		Name = name;
@@ -49,5 +46,13 @@ public class Product {
 	}
 	public void setCategoryName(String categoryName) {
 		CategoryName = categoryName;
+	}
+	
+	public void AddProduct(String name, String descreption, int quantity, int price, String categoryName) {
+		this.Name = name;
+		this.Descreption = descreption;
+		this.Quantity = quantity;
+		this.Price = price;
+		this.CategoryName = categoryName;
 	}
 }
