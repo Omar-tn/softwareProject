@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Category {
 
-    private final String name;
+    private String name;
     private ArrayList<Product> products;
 
     public Category(String cname) {
@@ -32,5 +32,9 @@ public class Category {
 
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
