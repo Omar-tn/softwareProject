@@ -43,7 +43,8 @@ public class Admin {
 	public void AdminOperation() {
 		Scanner AOperation = new Scanner(System.in);
 		
-		while(true) {
+		while(true){
+
 			System.out.println("\n+------- Welcome to Admin Wizard -------+\n");
 	    	System.out.println("1) Manage Products");
 	    	System.out.println("2) Manage Categories");
@@ -53,7 +54,7 @@ public class Admin {
 	    	System.out.println("Enter The Operation Number: ");
 	    	// for the admin dashboard
 	    	int OP = AOperation.nextInt();
-        	
+
         	switch(OP) {
     		case 1:
     			System.out.println("\\n+------- Manage Product -------+\\n");
