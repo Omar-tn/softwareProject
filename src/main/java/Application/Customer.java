@@ -1,5 +1,9 @@
 package Application;
+<<<<<<< HEAD
 
+=======
+import parts.Catalog;
+>>>>>>> 13951f02035dd11dfdf729b09371024782cf4713
 import java.util.Scanner;
 
 public class Customer {
@@ -16,6 +20,20 @@ public class Customer {
 		password = 0;
 	}
 	
+<<<<<<< HEAD
+=======
+	public Customer(String username) {
+		super();
+		this.username = username;
+	}
+	public Customer(String username, String email, int password) {
+		super();
+		this.username = username;
+		Email = email;
+		this.password = password;
+	}
+
+>>>>>>> 13951f02035dd11dfdf729b09371024782cf4713
 
 	public String getUsername() {
 		return username;
@@ -61,6 +79,7 @@ public class Customer {
         	System.out.println("Enter The Operation Number: ");
         	// for the customer dashboard
         	int OP = COperation.nextInt();
+<<<<<<< HEAD
         	
     		switch(OP) {
     		case 1:
@@ -68,6 +87,19 @@ public class Customer {
     			break;
     		case 2:
     			System.out.println("Make Purchase:");
+=======
+        	Catalog NewCatalog = new Catalog();
+    		switch(OP) {
+    		case 1:
+    			System.out.println("\n+------- Browse Products -------+\n");
+    			NewCatalog.viewAllProducts();
+    			break;
+    		case 2:
+    			System.out.println("\n+------- Make Purchases -------+\n");
+    			Scanner Purchase = new Scanner(System.in);
+    			NewCatalog.requestInstallation(Purchase);
+    			System.out.println("Successfully");
+>>>>>>> 13951f02035dd11dfdf729b09371024782cf4713
     			break;
     		case 3:
     			System.out.println("View Order History:");
@@ -76,7 +108,37 @@ public class Customer {
     			System.out.println("View Installation Requests:");
     			break;
     		case 5:
+<<<<<<< HEAD
     			System.out.println("Your profile:");
+=======
+    			System.out.println("\\n+------- Your Profile -------+\\n");
+    			System.out.println("Your Username: " + this.getUsername());
+    			System.out.println("Your Email: " + this.getEmail());
+    			System.out.println("1) Edit Username");
+    			System.out.println("2) Edit Email");
+    			System.out.println("3) Change Password");
+    			Scanner Choise = new Scanner(System.in);
+    			Scanner Operation = new Scanner(System.in);
+    			int ChoiseNum = Choise.nextInt();
+    			if(ChoiseNum == 1) {
+    				System.out.print("Enter New Username: ");
+    				String NewUsername = Operation.nextLine();
+    				this.setUsername(NewUsername);
+    				System.out.print("Updated Successfuly");
+    			}else if(ChoiseNum == 2) {
+    				System.out.print("Enter New Email: ");
+    				String NewEmail = Operation.nextLine();
+    				this.setEmail(NewEmail);
+    				System.out.print("Updated Successfuly");
+    			}else if(ChoiseNum == 3) {
+    				System.out.print("Enter New Password: ");
+    				int NewPassword = Operation.nextInt();
+    				this.setPassword(NewPassword);
+    				System.out.print("Updated Successfuly");
+    			}else {
+    				System.out.println("Invalid Input");
+    			}
+>>>>>>> 13951f02035dd11dfdf729b09371024782cf4713
     			break;
     		case 6:
     			System.out.println("Thank you for using our application.");

@@ -7,6 +7,10 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.util.Properties;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 13951f02035dd11dfdf729b09371024782cf4713
 public class Request {
 
     private Product product;
@@ -30,7 +34,10 @@ public class Request {
 
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 13951f02035dd11dfdf729b09371024782cf4713
     public void email() {
 
 
@@ -62,6 +69,12 @@ public class Request {
 
 
         }
+<<<<<<< HEAD
 
     }
+=======
+    }
+
+
+>>>>>>> 13951f02035dd11dfdf729b09371024782cf4713
 }
