@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Catalog {
 
-    ArrayList<Category> categories;
+    public ArrayList<Category> categories;
     Category electronics = new Category("Electronics");
     Category interior = new Category("Interior");
     Category exterior = new Category("Exterior");
@@ -247,15 +247,10 @@ public class Catalog {
         Storage.installationRequests.add(request);
 
         System.out.println("Your installation request has been submitted and is awaiting confirmation.");
-<<<<<<< HEAD
-        request.email();
-
-
-=======
 
         request.email();
 
->>>>>>> 13951f02035dd11dfdf729b09371024782cf4713
+
     }
 
 
