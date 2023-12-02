@@ -1,9 +1,11 @@
 package Application;
 
-<<<<<<< HEAD
-=======
+import parts.Category;
+import parts.Product;
+import parts.Storage;
+
 import java.util.ArrayList;
->>>>>>> 13951f02035dd11dfdf729b09371024782cf4713
+
 import java.util.Scanner;
 
 public class Admin {
@@ -47,12 +49,10 @@ public class Admin {
 	public void AdminOperation() {
 		Scanner AOperation = new Scanner(System.in);
 		
-<<<<<<< HEAD
-		while(true){
 
-=======
+
 		while(true) {
->>>>>>> 13951f02035dd11dfdf729b09371024782cf4713
+
 			System.out.println("\n+------- Welcome to Admin Wizard -------+\n");
 	    	System.out.println("1) Manage Products");
 	    	System.out.println("2) Manage Categories");
@@ -62,34 +62,7 @@ public class Admin {
 	    	System.out.println("Enter The Operation Number: ");
 	    	// for the admin dashboard
 	    	int OP = AOperation.nextInt();
-<<<<<<< HEAD
 
-        	switch(OP) {
-    		case 1:
-    			System.out.println("\\n+------- Manage Product -------+\\n");
-    			//---------------------------------------
-    			System.out.println("1) Add Products");
-    			System.out.println("2) Update Products");
-    			Scanner ManageIn = new Scanner(System.in);
-    			Scanner Operation = new Scanner(System.in);
-    			int Min = ManageIn.nextInt();
-    			if(Min == 1) {
-    				System.out.print("Product Name: ");
-    				String PName = Operation.nextLine();
-    				System.out.print("\nProduct Descreption: ");
-    				String PDescreption = Operation.nextLine();
-    				System.out.print("\nProduct Quantity: ");
-    				int PQuantity = Operation.nextInt();
-    				System.out.print("\nProduct Price: ");
-    				int PPrice = Operation.nextInt();
-    				System.out.print("\nProduct Category: ");
-    				String PCategory = Operation.nextLine();
-    				Product NewProduct = new Product(PName,PDescreption,PQuantity,PPrice,PCategory);
-    				System.out.println("\nAdded Successfuly");
-    			}else if(Min == 2){
-    				// update Poduct
-=======
-        	
         	switch(OP) {
     		case 1:
     			System.out.println("\n+------- Manage Product -------+\n");
@@ -99,7 +72,7 @@ public class Admin {
     			System.out.print("Enter the number of your Action: ");
     			Scanner ManageP = new Scanner(System.in);
     			Scanner Operation = new Scanner(System.in);
-    			ArrayList<Product> productList = new ArrayList<Product>();
+    			//
     			int Min = ManageP.nextInt();
     			if(Min == 1) {
     				System.out.print("Product Name: ");
@@ -112,29 +85,28 @@ public class Admin {
     				int PPrice = Operation.nextInt();
     				System.out.print("Product Category: ");
     				String PCategory = Operation.nextLine();
-    				productList.add(new Product(PName, PDescreption, PQuantity, PPrice, PCategory));
+					String  idNum="p"+Storage.productList.size();
+
+    				Storage.productList.add(new Product(PName,idNum, PCategory, PPrice, PDescreption));
+					Storage.quantity.put(idNum,PQuantity);
+
     				System.out.println("\nAdded Successfuly");
     			}else if(Min == 2){
     				System.out.print("\nEnter the name of Product: ");
     				String name = Operation.nextLine();
-    				for (Product element : productList) {
+    				for (Product element : Storage.productList) {
     					if(element.getName().equalsIgnoreCase(name)) {
     						element.setName(name);
     						System.out.println("Edit successfuly");
     					}
     				}
->>>>>>> 13951f02035dd11dfdf729b09371024782cf4713
+
     			}else {
     				System.out.println("Invalid Input");
     			}
     			break;
     		case 2:
-<<<<<<< HEAD
-    			System.out.println("Manage Categories:");
-    			break;
-    		case 3:
-    			System.out.println("Manage Customers:");
-=======
+
     			System.out.println("\n+------- Manage Categories -------+\n");
     			System.out.println("Add Categories");
     			System.out.println("Edit Categories");
@@ -142,7 +114,7 @@ public class Admin {
     			System.out.println("Enter the number of your Action: ");
     			Scanner ManageCat = new Scanner(System.in);
     			Scanner CategoryOperation = new Scanner(System.in);
-    			ArrayList<Category> categoryList = new ArrayList<Category>();
+    			ArrayList<Category> categoryList = Storage.catalog.categories;
     			int MCat = ManageCat.nextInt();
     			if(MCat == 1) {
     				System.out.print("\nEnter the name of category: ");
@@ -161,9 +133,11 @@ public class Admin {
     			}else if(MCat == 3){
     				System.out.print("\nEnter the name of category do you want to delete: ");
     				String DeleteName = CategoryOperation.nextLine();
-    				Category categoryToRemove = new Category(DeleteName);
-    				categoryList.remove(categoryToRemove);
-    				System.out.println("Delete successfuly");
+    				for (Category category: categoryList)
+						if (category.getName().equals(DeleteName)) {
+							categoryList.remove(category);
+							System.out.println("Delete successfuly");
+						}
     			}else {
     				System.out.println("Invalid Input");
     			}
@@ -196,15 +170,14 @@ public class Admin {
     				System.out.println("Delete successfuly");
     			}else
     				System.out.println("Invalid Input");
->>>>>>> 13951f02035dd11dfdf729b09371024782cf4713
+
     			break;
     		case 4:
     			System.out.println("Manage Installation:");
     		case 5:
-<<<<<<< HEAD
-=======
+
     			System.out.println("Thanks for Using Our Application");
->>>>>>> 13951f02035dd11dfdf729b09371024782cf4713
+
     			System.exit(0);
     		}
 		}

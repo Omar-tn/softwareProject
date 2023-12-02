@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbd51427-b85e-4a30-ba90-a94a5a0f4b13" name="Changes" comment="f commit">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application/Product.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/orders/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/orders/Request.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/parts/Catalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parts/Catalog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/orders/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orders/Request.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parts/Catalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parts/Catalog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parts/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parts/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parts/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parts/Storage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Application/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Application/Product.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +75,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "m-omar",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "last_directory_selection": "C:/study/software/softwareProject/src/test/java",
     "last_opened_file_path": "C:/study/software/softwareProject",

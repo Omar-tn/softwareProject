@@ -1,9 +1,7 @@
 package Application;
-<<<<<<< HEAD
 
-=======
 import parts.Catalog;
->>>>>>> 13951f02035dd11dfdf729b09371024782cf4713
+
 import java.util.Scanner;
 
 public class Customer {
@@ -20,8 +18,7 @@ public class Customer {
 		password = 0;
 	}
 	
-<<<<<<< HEAD
-=======
+
 	public Customer(String username) {
 		super();
 		this.username = username;
@@ -33,7 +30,7 @@ public class Customer {
 		this.password = password;
 	}
 
->>>>>>> 13951f02035dd11dfdf729b09371024782cf4713
+
 
 	public String getUsername() {
 		return username;
@@ -79,15 +76,7 @@ public class Customer {
         	System.out.println("Enter The Operation Number: ");
         	// for the customer dashboard
         	int OP = COperation.nextInt();
-<<<<<<< HEAD
-        	
-    		switch(OP) {
-    		case 1:
-    			System.out.println("Browse Products:");
-    			break;
-    		case 2:
-    			System.out.println("Make Purchase:");
-=======
+
         	Catalog NewCatalog = new Catalog();
     		switch(OP) {
     		case 1:
@@ -99,7 +88,7 @@ public class Customer {
     			Scanner Purchase = new Scanner(System.in);
     			NewCatalog.requestInstallation(Purchase);
     			System.out.println("Successfully");
->>>>>>> 13951f02035dd11dfdf729b09371024782cf4713
+
     			break;
     		case 3:
     			System.out.println("View Order History:");
@@ -108,9 +97,7 @@ public class Customer {
     			System.out.println("View Installation Requests:");
     			break;
     		case 5:
-<<<<<<< HEAD
-    			System.out.println("Your profile:");
-=======
+
     			System.out.println("\\n+------- Your Profile -------+\\n");
     			System.out.println("Your Username: " + this.getUsername());
     			System.out.println("Your Email: " + this.getEmail());
@@ -138,7 +125,7 @@ public class Customer {
     			}else {
     				System.out.println("Invalid Input");
     			}
->>>>>>> 13951f02035dd11dfdf729b09371024782cf4713
+
     			break;
     		case 6:
     			System.out.println("Thank you for using our application.");

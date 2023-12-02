@@ -8,11 +8,11 @@ import java.util.HashMap;
 public class Storage {
 
     public static ArrayList<Request> installationRequests = new ArrayList<>();
-
-    private Catalog catalog;
+    public static ArrayList<Product> productList = new ArrayList<Product>();
+    public static Catalog catalog;
     String[] part = {"steering cover * p1 * interior * 13 * black leather ", "wheel cover * p2 * external * 20 * silver aluminium  "};
     //enum  parts {steering,"wheel","radio"};
-    static HashMap<String, Integer> quantity = new HashMap<>();
+    public static HashMap<String, Integer> quantity = new HashMap<>();
 
     void s() {
 
