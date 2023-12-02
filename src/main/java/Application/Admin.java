@@ -1,6 +1,9 @@
 package Application;
 
+<<<<<<< HEAD
+=======
 import java.util.ArrayList;
+>>>>>>> 13951f02035dd11dfdf729b09371024782cf4713
 import java.util.Scanner;
 
 public class Admin {
@@ -44,7 +47,12 @@ public class Admin {
 	public void AdminOperation() {
 		Scanner AOperation = new Scanner(System.in);
 		
+<<<<<<< HEAD
+		while(true){
+
+=======
 		while(true) {
+>>>>>>> 13951f02035dd11dfdf729b09371024782cf4713
 			System.out.println("\n+------- Welcome to Admin Wizard -------+\n");
 	    	System.out.println("1) Manage Products");
 	    	System.out.println("2) Manage Categories");
@@ -54,6 +62,33 @@ public class Admin {
 	    	System.out.println("Enter The Operation Number: ");
 	    	// for the admin dashboard
 	    	int OP = AOperation.nextInt();
+<<<<<<< HEAD
+
+        	switch(OP) {
+    		case 1:
+    			System.out.println("\\n+------- Manage Product -------+\\n");
+    			//---------------------------------------
+    			System.out.println("1) Add Products");
+    			System.out.println("2) Update Products");
+    			Scanner ManageIn = new Scanner(System.in);
+    			Scanner Operation = new Scanner(System.in);
+    			int Min = ManageIn.nextInt();
+    			if(Min == 1) {
+    				System.out.print("Product Name: ");
+    				String PName = Operation.nextLine();
+    				System.out.print("\nProduct Descreption: ");
+    				String PDescreption = Operation.nextLine();
+    				System.out.print("\nProduct Quantity: ");
+    				int PQuantity = Operation.nextInt();
+    				System.out.print("\nProduct Price: ");
+    				int PPrice = Operation.nextInt();
+    				System.out.print("\nProduct Category: ");
+    				String PCategory = Operation.nextLine();
+    				Product NewProduct = new Product(PName,PDescreption,PQuantity,PPrice,PCategory);
+    				System.out.println("\nAdded Successfuly");
+    			}else if(Min == 2){
+    				// update Poduct
+=======
         	
         	switch(OP) {
     		case 1:
@@ -88,11 +123,18 @@ public class Admin {
     						System.out.println("Edit successfuly");
     					}
     				}
+>>>>>>> 13951f02035dd11dfdf729b09371024782cf4713
     			}else {
     				System.out.println("Invalid Input");
     			}
     			break;
     		case 2:
+<<<<<<< HEAD
+    			System.out.println("Manage Categories:");
+    			break;
+    		case 3:
+    			System.out.println("Manage Customers:");
+=======
     			System.out.println("\n+------- Manage Categories -------+\n");
     			System.out.println("Add Categories");
     			System.out.println("Edit Categories");
@@ -154,11 +196,15 @@ public class Admin {
     				System.out.println("Delete successfuly");
     			}else
     				System.out.println("Invalid Input");
+>>>>>>> 13951f02035dd11dfdf729b09371024782cf4713
     			break;
     		case 4:
     			System.out.println("Manage Installation:");
     		case 5:
+<<<<<<< HEAD
+=======
     			System.out.println("Thanks for Using Our Application");
+>>>>>>> 13951f02035dd11dfdf729b09371024782cf4713
     			System.exit(0);
     		}
 		}

@@ -242,14 +242,20 @@ public class Catalog {
         System.out.print("Enter your preferred date: ");
         String preferredDate = scanner.nextLine();
 
-        // Create an installation request and add it to the list
+        // Create an installation request and add it to the list in storage
         Request request = new Request(p, customerName, carMake, carModel, preferredDate, false);
         Storage.installationRequests.add(request);
 
         System.out.println("Your installation request has been submitted and is awaiting confirmation.");
+<<<<<<< HEAD
+        request.email();
+
+
+=======
 
         request.email();
 
+>>>>>>> 13951f02035dd11dfdf729b09371024782cf4713
     }
 
 

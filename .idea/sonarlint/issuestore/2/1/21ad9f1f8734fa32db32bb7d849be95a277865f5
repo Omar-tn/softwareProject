@@ -1,0 +1,16 @@
+
+–
+java:S1319
+"tThe type of "installationRequests" should be an interface such as "List" rather than the implementation "ArrayList".(Ñ…ÑŠùÿÿÿÿ8Ûı¸1
+‚
+java:S1104
+"`Make installationRequests a static final constant or non-public and provide accessors if needed.(Ñ…ÑŠùÿÿÿÿ8Ûı¸1
+\
+java:S1444
+":Make this "public static installationRequests" field final(Ñ…ÑŠùÿÿÿÿ8Ûı¸1
+
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¿¾›ç8“Ûı¸1
+?
+java:S2386
+"Make this member "protected".(Ñ…ÑŠùÿÿÿÿ8ûìï†¹1
+]	java:S125"<This block of commented-out lines of code should be removed.(´®Îıÿÿÿÿ8•Ûı¸1
