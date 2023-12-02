@@ -1,5 +1,6 @@
 package Application;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Admin {
@@ -60,9 +61,11 @@ public class Admin {
     			//---------------------------------------
     			System.out.println("1) Add Products");
     			System.out.println("2) Update Products");
-    			Scanner ManageIn = new Scanner(System.in);
+    			System.out.print("Enter the number of your Action: ");
+    			Scanner ManageP = new Scanner(System.in);
     			Scanner Operation = new Scanner(System.in);
-    			int Min = ManageIn.nextInt();
+    			ArrayList<Product> productList = new ArrayList<Product>();
+    			int Min = ManageP.nextInt();
     			if(Min == 1) {
     				System.out.print("Product Name: ");
     				String PName = Operation.nextLine();
@@ -74,16 +77,54 @@ public class Admin {
     				int PPrice = Operation.nextInt();
     				System.out.print("\nProduct Category: ");
     				String PCategory = Operation.nextLine();
-    				Product NewProduct = new Product(PName,PDescreption,PQuantity,PPrice,PCategory);
+    				productList.add(new Product(PName, PDescreption, PQuantity, PPrice, PCategory));
     				System.out.println("\nAdded Successfuly");
     			}else if(Min == 2){
-    				// update Poduct
+    				System.out.print("\nEnter the name of Product: ");
+    				String name = Operation.nextLine();
+    				for (Product element : productList) {
+    					if(element.getName().equalsIgnoreCase(name)) {
+    						element.setName(name);
+    						System.out.println("Edit successfuly");
+    					}
+    				}
     			}else {
     				System.out.println("Invalid Input");
     			}
     			break;
     		case 2:
-    			System.out.println("Manage Categories:");
+    			System.out.println("\\n+------- Manage Categories -------+\\n");
+    			System.out.println("Add Categories");
+    			System.out.println("Edit Categories");
+    			System.out.println("Delete Categories");
+    			System.out.println("Enter the number of your Action: ");
+    			Scanner ManageCat = new Scanner(System.in);
+    			Scanner CategoryOperation = new Scanner(System.in);
+    			ArrayList<Category> categoryList = new ArrayList<Category>();
+    			int MCat = ManageCat.nextInt();
+    			if(MCat == 1) {
+    				System.out.print("\nEnter the name of category: ");
+    				String Catname = CategoryOperation.nextLine();
+    				categoryList.add(new Category(Catname));
+    				System.out.println("\\nAdded Successfuly");
+    			}else if(MCat == 2) {
+    				System.out.print("\nEnter the name of category: ");
+    				String name = CategoryOperation.nextLine();
+    				for (Category element : categoryList) {
+    					if(element.getName().equalsIgnoreCase(name)) {
+    						element.setName(name);
+    						System.out.println("Edit successfuly");
+    					}
+    				}
+    			}else if(MCat == 3){
+    				System.out.print("\nEnter the name of category do you want to delete: ");
+    				String DeleteName = CategoryOperation.nextLine();
+    				Category categoryToRemove = new Category(DeleteName);
+    				categoryList.remove(categoryToRemove);
+    				System.out.println("Delete successfuly");
+    			}else {
+    				System.out.println("Invalid Input");
+    			}
     			break;
     		case 3:
     			System.out.println("Manage Customers:");
