@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbd51427-b85e-4a30-ba90-a94a5a0f4b13" name="Changes" comment="coverage commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="bbd51427-b85e-4a30-ba90-a94a5a0f4b13" name="Changes" comment="dependency commit">
+      <change beforePath="$PROJECT_DIR$/src/test/java/CatalogTestDiffblueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CatalogTestDiffblueTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +105,7 @@
       <recent name="orders" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StorageTest.run">
+  <component name="RunManager" selected="JUnit.CatalogTestDiffblueTest.testTheProductCatalogIsPopulated">
     <configuration name="CatalogTestDiffblueTest.testTheProductCatalogIsPopulated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="src" />
       <option name="PACKAGE_NAME" value="" />
@@ -207,9 +207,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CatalogTestDiffblueTest.testTheProductCatalogIsPopulated" />
         <item itemvalue="JUnit.StorageTest.run" />
         <item itemvalue="JUnit.RequestTest (1)" />
-        <item itemvalue="JUnit.CatalogTestDiffblueTest.testTheProductCatalogIsPopulated" />
         <item itemvalue="JUnit.RequestTest.RequestTest" />
         <item itemvalue="JUnit.RequestTest" />
       </list>
@@ -230,7 +230,7 @@
       <workItem from="1701354052605" duration="19981000" />
       <workItem from="1702232447001" duration="28000" />
       <workItem from="1703573728706" duration="2260000" />
-      <workItem from="1703598376764" duration="23277000" />
+      <workItem from="1703598376764" duration="23603000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -296,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703610094397</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="dependency commit">
+      <option name="closed" value="true" />
+      <created>1703627418354</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1703627418354</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +329,8 @@
     <MESSAGE value="f commit" />
     <MESSAGE value="Merge branch 'm-omar' of https://github.com/Omar-tn/softwareProject into m-omar" />
     <MESSAGE value="coverage commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="coverage commit" />
+    <MESSAGE value="dependency commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="dependency commit" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
