@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbd51427-b85e-4a30-ba90-a94a5a0f4b13" name="Changes" comment="coverage commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="bbd51427-b85e-4a30-ba90-a94a5a0f4b13" name="Changes" comment="dependency commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +64,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "git-widget-placeholder": "Merging m-omar",
+    "git-widget-placeholder": "m-omar",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "last_directory_selection": "C:/study/software/softwareProject/src/test/java/parts",
     "last_opened_file_path": "C:/study/software/softwareProject",
@@ -105,19 +103,28 @@
       <recent name="orders" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RequestTest.RequestTest">
-    <configuration name="ProductTest.testProductCreation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CatalogTestDiffblueTest.testTheProductCatalogIsPopulated">
+    <configuration name="CatalogTestDiffblueTest.testTheProductCatalogIsPopulated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="src" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CatalogTestDiffblueTest" />
+      <option name="METHOD_NAME" value="testTheProductCatalogIsPopulated" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RequestTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="src" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parts.*" />
+          <option name="PATTERN" value="orders.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="parts" />
-      <option name="MAIN_CLASS_NAME" value="parts.ProductTest" />
-      <option name="METHOD_NAME" value="testProductCreation" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="orders" />
+      <option name="MAIN_CLASS_NAME" value="orders.RequestTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -196,22 +203,13 @@
       </settings>
       <method v="2" />
     </configuration>
-    <configuration name="Write tests for package parts" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" activateToolWindowBeforeRun="false" temporary="true">
-      <module name="src" />
-      <settings run-config-name="Write tests for package parts" include-system-env-vars="true" skeleton-tests-only="false">
-        <jvm-args />
-        <selection-scope>package</selection-scope>
-        <selected-element key="parts" />
-      </settings>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CatalogTestDiffblueTest.testTheProductCatalogIsPopulated" />
+        <item itemvalue="JUnit.StorageTest.run" />
+        <item itemvalue="JUnit.RequestTest (1)" />
         <item itemvalue="JUnit.RequestTest.RequestTest" />
         <item itemvalue="JUnit.RequestTest" />
-        <item itemvalue="JUnit.ProductTest.testProductCreation" />
-        <item itemvalue="JUnit.StorageTest.run" />
-        <item itemvalue="Diffblue Cover.Write tests for package parts" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +228,7 @@
       <workItem from="1701354052605" duration="19981000" />
       <workItem from="1702232447001" duration="28000" />
       <workItem from="1703573728706" duration="2260000" />
-      <workItem from="1703598376764" duration="22922000" />
+      <workItem from="1703598376764" duration="23911000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -296,7 +294,23 @@
       <option name="project" value="LOCAL" />
       <updated>1703610094397</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="dependency commit">
+      <option name="closed" value="true" />
+      <created>1703627418354</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1703627418354</updated>
+    </task>
+    <task id="LOCAL-00010" summary="dependency commit">
+      <option name="closed" value="true" />
+      <created>1703627635395</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1703627635395</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +335,8 @@
     <MESSAGE value="f commit" />
     <MESSAGE value="Merge branch 'm-omar' of https://github.com/Omar-tn/softwareProject into m-omar" />
     <MESSAGE value="coverage commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="coverage commit" />
+    <MESSAGE value="dependency commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="dependency commit" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
