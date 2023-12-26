@@ -133,11 +133,13 @@ public class Admin {
     			}else if(MCat == 3){
     				System.out.print("\nEnter the name of category do you want to delete: ");
     				String DeleteName = CategoryOperation.nextLine();
-    				for (Category category: categoryList)
+    				for (Category category: categoryList) {
 						if (category.getName().equals(DeleteName)) {
 							categoryList.remove(category);
 							System.out.println("Delete successfuly");
 						}
+					}
+
     			}else {
     				System.out.println("Invalid Input");
     			}

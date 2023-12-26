@@ -1,9 +1,22 @@
 package parts;
 
 import static org.junit.Assert.assertEquals;
-
+import static org.mockito.Mockito.when;
+//
+//import org.junit.BeforeClass;
+import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
+import java.io.PrintStream;
+import java.util.Scanner;
 
 public class CatalogDiffblueTest {
     /**
@@ -22,24 +35,56 @@ public class CatalogDiffblueTest {
     }
 
     /**
-     * Method under test: {@link Catalog#viewAllProducts()}
+     * Method under test: {@link Catalog#filterProductsByPrice()}
      */
-    /*@Test
-    @Ignore("TODO: Complete this test")
-    public void testViewAllProducts2() {
-        // TODO: Complete this test.
-        //   Reason: R013 No inputs found that don't throw a trivial exception.
-        //   Diffblue Cover tried to run the arrange/act section, but the method under
-        //   test threw
-        //   java.lang.NullPointerException: Cannot invoke "java.lang.Iterable.iterator()" because "iterable" is null
-        //       at parts.Catalog.viewAllProducts(Catalog.java:37)
-        //   See https://diff.blue/R013 to resolve this issue.
+    class InputOutputProvider {
 
-        // Arrange
-        Catalog catalog = new Catalog();
-        catalog.categories = null;
+        Scanner scanner ;
+        //void print(String message);
 
-        // Act
-        catalog.viewAllProducts();
-    }*/
+        public  InputOutputProvider(Scanner scanner) {
+            this.scanner = scanner;
+        }
+
+
+        public String nextLine() {
+            return scanner.nextLine();
+        }
+
+
+    }
+
+
+    @Mock
+    private static Scanner scanner;
+
+    private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
+
+    @BeforeClass
+    public static void setUp() {
+
+        //System.setOut(new PrintStream(outputStreamCaptor));
+        scanner = new Scanner(System.in);
+    }
+
+    @Test
+    public void testFilterProductsByPrice() {
+        //MockitoAnnotations.openMocks(this);
+        // Set up the mocked user input
+        InputOutputProvider inputOutputProvider = new InputOutputProvider(scanner);
+
+        String input = "10\n2\n";
+        InputStream inputStream = new ByteArrayInputStream(input.getBytes());
+        System.setIn(inputStream);
+
+        // Set up the mocked scanner behavior
+        when(inputOutputProvider.nextLine()).thenReturn("10", "2");
+
+        // Call the method
+        Catalog catalog = new Catalog(); // Instantiate your class
+        catalog.filterProductsByPrice(/*scanner*/);
+
+        // Assert the output
+        assertEquals("here's no any product", outputStreamCaptor.toString().trim());
+    }
 }

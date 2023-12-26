@@ -1,7 +1,7 @@
 package parts;
 
 import org.junit.Test;
-
+import parts.Storage;
 import static org.junit.Assert.*;
 
 public class ProductTest {
@@ -15,6 +15,13 @@ public class ProductTest {
         assertEquals("category1", product.getCategory());
         assertEquals("Description 1", product.getDescription());
         assertEquals(20, product.getPrice());
+        product = new  Product("");
+        assertEquals("", product.getName());
+        assertEquals(product.toString(),product.getName() + ": " + product.getCategory() + " " + (product.getPrice() < 0 ? "Undefined" : product.getPrice()) + "$   " + Storage.quantity.get(product.getID()) + "     " + product.getDescription());
+
+        product.setName("");
+        assertEquals("",product.getName());
+
     }
 
     @Test
