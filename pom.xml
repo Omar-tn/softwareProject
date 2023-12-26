@@ -26,20 +26,14 @@
             <version>RELEASE</version>
             <scope>test</scope>
         </dependency>
-
-    </dependencies>
-
-    <dependencies>
-
         <dependency>
             <groupId>com.sun.mail</groupId>
             <artifactId>javax.mail</artifactId>
             <version>1.6.2</version>
-        </dependency>
-
-
+         </dependency>
     </dependencies>
 
+    
 
     <modelVersion>4.0.0</modelVersion>
 
