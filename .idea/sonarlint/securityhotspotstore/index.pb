@@ -37,3 +37,11 @@ T
 $.idea/libraries/io_cucumber_java.xml,e\6\e64ec4cfe0f39346dcea7f8fc22a10f10e0745b7
 P
  src/main/java/parts/Storage.java,2\1\21ad9f1f8734fa32db32bb7d849be95a277865f5
+W
+'src/main/java/Application/Customer.java,f\3\f3a22e7d20d51f5cd0b7d704c992c7991420ab20
+X
+(src/main/java/Application/Installer.java,e\2\e2303a3838536496e42b110be4e9549931ece251
+T
+$src/main/java/Application/Admin.java,0\6\0602bf3f8ba2c46574f4dbc78fddba023937123e
+S
+#src/main/java/Application/Main.java,a\8\a88ce80be2ec37d690f7842e0d165b9938a5207b
