@@ -5,7 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbd51427-b85e-4a30-ba90-a94a5a0f4b13" name="Changes" comment="f commit">
+      <change afterPath="$PROJECT_DIR$/.idea/CoverUsage.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CatalogTestDiffblueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/parts/CatalogDiffblueTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Catalog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Application/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Application/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Application/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Application/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/orders/Request$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orders/Request$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/orders/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orders/Request.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Catalog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parts/Catalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parts/Catalog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parts/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parts/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parts/Storage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parts/Storage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/orders/RequestTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/orders/RequestTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/parts/CatalogTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/parts/CatalogTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/parts/CategoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/parts/CategoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/parts/ProductTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/parts/ProductTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +45,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -62,6 +79,7 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
@@ -105,7 +123,7 @@
       <recent name="parts" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Diffblue Cover.Write tests for method CatalogTest.theProductCatalogIsPopulated">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="src" />
@@ -119,13 +137,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: product_catalog" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Filtering Products by Catalog" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/gerkhen/product_catalog.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/gerkhin/product_catalog.feature" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="src" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: product_catalog" />
+      <option name="NAME_FILTER" value="^Filtering Products by Catalog$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Filtering Products by Catalog$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Filtering Products by Catalog" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -137,34 +156,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CatalogTest.requestInstallation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Viewing Products" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/gerkhin/product_catalog.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="src" />
+      <option name="NAME_FILTER" value="^Viewing Products$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Viewing Products$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Viewing Products" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parts.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="parts" />
-      <option name="MAIN_CLASS_NAME" value="parts.CatalogTest" />
-      <option name="METHOD_NAME" value="requestInstallation" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CategoryTest.testCategoryCreation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="src" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="parts.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="parts" />
-      <option name="MAIN_CLASS_NAME" value="parts.CategoryTest" />
-      <option name="METHOD_NAME" value="testCategoryCreation" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -185,13 +191,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Write tests for method CatalogTest.theProductCatalogIsPopulated" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="src" />
+      <settings run-config-name="Write tests for method CatalogTest.theProductCatalogIsPopulated" include-system-env-vars="true" skeleton-tests-only="false">
+        <jvm-args />
+        <selection-scope>method</selection-scope>
+        <selected-element key="CatalogTest.theProductCatalogIsPopulated:()V" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Write tests for method Catalog.viewAllProducts" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration">
+      <module name="src" />
+      <settings run-config-name="Write tests for method Catalog.viewAllProducts" include-system-env-vars="true" skeleton-tests-only="false">
+        <jvm-args />
+        <selection-scope>method</selection-scope>
+        <selected-element key="parts.Catalog.viewAllProducts:()V" />
+      </settings>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Diffblue Cover.Write tests for method CatalogTest.theProductCatalogIsPopulated" />
+        <item itemvalue="Cucumber Java.Scenario: Filtering Products by Catalog" />
+        <item itemvalue="Cucumber Java.Scenario: Viewing Products" />
+        <item itemvalue="Diffblue Cover.Write tests for method Catalog.viewAllProducts" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.CategoryTest.testCategoryCreation" />
-        <item itemvalue="JUnit.ProductTest.testProductCreation" />
-        <item itemvalue="JUnit.CatalogTest.requestInstallation" />
-        <item itemvalue="Cucumber Java.Feature: product_catalog" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +234,7 @@
       <workItem from="1701354052605" duration="19981000" />
       <workItem from="1702232447001" duration="28000" />
       <workItem from="1703573728706" duration="2260000" />
-      <workItem from="1703598376764" duration="3501000" />
+      <workItem from="1703598376764" duration="6557000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
