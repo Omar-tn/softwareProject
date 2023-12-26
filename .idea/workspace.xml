@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bbd51427-b85e-4a30-ba90-a94a5a0f4b13" name="Changes" comment="coverage commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +230,7 @@
       <workItem from="1701354052605" duration="19981000" />
       <workItem from="1702232447001" duration="28000" />
       <workItem from="1703573728706" duration="2260000" />
-      <workItem from="1703598376764" duration="21601000" />
+      <workItem from="1703598376764" duration="22922000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
