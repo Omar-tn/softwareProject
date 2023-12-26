@@ -4,26 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbd51427-b85e-4a30-ba90-a94a5a0f4b13" name="Changes" comment="f commit">
-      <change afterPath="$PROJECT_DIR$/.idea/CoverUsage.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CatalogTestDiffblueTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/parts/CatalogDiffblueTest.java" afterDir="false" />
+    <list default="true" id="bbd51427-b85e-4a30-ba90-a94a5a0f4b13" name="Changes" comment="coverage commit">
+      <change afterPath="$PROJECT_DIR$/src/test/java/parts/StorageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Catalog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Application/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Application/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Application/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Application/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/orders/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/orders/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parts/Catalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parts/Catalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/orders/RequestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/orders/RequestTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parts/CatalogDiffblueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parts/CatalogDiffblueTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parts/CatalogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parts/CatalogTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parts/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parts/ProductTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/orders/Request$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orders/Request$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/orders/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/orders/Request.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Catalog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parts/Catalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parts/Catalog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parts/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parts/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/parts/Storage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/parts/Storage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/parts/Storage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/orders/RequestTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/orders/RequestTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/parts/CatalogTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/parts/CatalogTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/parts/CategoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/parts/CategoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/parts/ProductTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/parts/ProductTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/parts/ProductTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -86,7 +84,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
     "git-widget-placeholder": "m-omar",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
-    "last_directory_selection": "C:/study/software/softwareProject/src/test/java",
+    "last_directory_selection": "C:/study/software/softwareProject/src/test/java/parts",
     "last_opened_file_path": "C:/Users/pc/Desktop/softwareProject",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -119,62 +117,11 @@
       <recent name="parts" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="orders" />
       <recent name="parts" />
+      <recent name="orders" />
     </key>
   </component>
-  <component name="RunManager" selected="Diffblue Cover.Write tests for method CatalogTest.theProductCatalogIsPopulated">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="src" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Filtering Products by Catalog" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/gerkhin/product_catalog.feature" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="src" />
-      <option name="NAME_FILTER" value="^Filtering Products by Catalog$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Filtering Products by Catalog$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Filtering Products by Catalog" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Viewing Products" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/gerkhin/product_catalog.feature" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="src" />
-      <option name="NAME_FILTER" value="^Viewing Products$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Viewing Products$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Viewing Products" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.RequestTest.RequestTest">
     <configuration name="ProductTest.testProductCreation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="src" />
       <extension name="coverage">
@@ -191,12 +138,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Write tests for method CatalogTest.theProductCatalogIsPopulated" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" activateToolWindowBeforeRun="false" temporary="true">
+    <configuration name="RequestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="src" />
-      <settings run-config-name="Write tests for method CatalogTest.theProductCatalogIsPopulated" include-system-env-vars="true" skeleton-tests-only="false">
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="orders.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="orders" />
+      <option name="MAIN_CLASS_NAME" value="orders.RequestTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RequestTest.RequestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="src" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="orders.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="orders" />
+      <option name="MAIN_CLASS_NAME" value="orders.RequestTest" />
+      <option name="METHOD_NAME" value="RequestTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StorageTest.run" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="src" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="parts" />
+      <option name="MAIN_CLASS_NAME" value="parts.StorageTest" />
+      <option name="METHOD_NAME" value="run" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Write tests for class Storage" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration">
+      <module name="src" />
+      <settings run-config-name="Write tests for class Storage" include-system-env-vars="true" skeleton-tests-only="false">
         <jvm-args />
-        <selection-scope>method</selection-scope>
-        <selected-element key="CatalogTest.theProductCatalogIsPopulated:()V" />
+        <selection-scope>class</selection-scope>
+        <selected-element key="parts.Storage" />
       </settings>
       <method v="2" />
     </configuration>
@@ -209,13 +203,31 @@
       </settings>
       <method v="2" />
     </configuration>
+    <configuration name="Write tests for method Storage.&lt;init&gt;" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration">
+      <module name="src" />
+      <settings run-config-name="Write tests for method Storage.&lt;init&gt;" include-system-env-vars="true" skeleton-tests-only="false">
+        <jvm-args />
+        <selection-scope>method</selection-scope>
+        <selected-element key="parts.Storage.&lt;init&gt;:()V" />
+      </settings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Write tests for package parts" type="com.diffblue.cover.write-tests-run-configuration" factoryName="com.diffblue.cover.write-tests-run-configuration" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="src" />
+      <settings run-config-name="Write tests for package parts" include-system-env-vars="true" skeleton-tests-only="false">
+        <jvm-args />
+        <selection-scope>package</selection-scope>
+        <selected-element key="parts" />
+      </settings>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Diffblue Cover.Write tests for method CatalogTest.theProductCatalogIsPopulated" />
-        <item itemvalue="Cucumber Java.Scenario: Filtering Products by Catalog" />
-        <item itemvalue="Cucumber Java.Scenario: Viewing Products" />
-        <item itemvalue="Diffblue Cover.Write tests for method Catalog.viewAllProducts" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.RequestTest.RequestTest" />
+        <item itemvalue="JUnit.RequestTest" />
+        <item itemvalue="JUnit.ProductTest.testProductCreation" />
+        <item itemvalue="JUnit.StorageTest.run" />
+        <item itemvalue="Diffblue Cover.Write tests for package parts" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +246,7 @@
       <workItem from="1701354052605" duration="19981000" />
       <workItem from="1702232447001" duration="28000" />
       <workItem from="1703573728706" duration="2260000" />
-      <workItem from="1703598376764" duration="6557000" />
+      <workItem from="1703598376764" duration="20213000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -284,7 +296,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701531184212</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="coverage commit">
+      <option name="closed" value="true" />
+      <created>1703609950056</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703609950056</updated>
+    </task>
+    <task id="LOCAL-00008" summary="coverage commit">
+      <option name="closed" value="true" />
+      <created>1703610094397</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1703610094397</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,7 +336,8 @@
     <MESSAGE value="Merge branch 'main' of https://github.com/Omar-tn/softwareProject into m-omar" />
     <MESSAGE value="f commit" />
     <MESSAGE value="Merge branch 'm-omar' of https://github.com/Omar-tn/softwareProject into m-omar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'm-omar' of https://github.com/Omar-tn/softwareProject into m-omar" />
+    <MESSAGE value="coverage commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="coverage commit" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

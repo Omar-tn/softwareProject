@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class Catalog {
 
+    public static final String SEPARATOR = "-----------------------";
     public ArrayList<Category> categories;
     Category electronics = new Category("Electronics");
     Category interior = new Category("Interior");
@@ -33,7 +34,7 @@ public class Catalog {
 
     public void viewAllProducts() {
         System.out.println("\nAll Products:");
-        System.out.println("-----------------------");
+        System.out.println(SEPARATOR);
         for (Category category : categories) {
             boolean f = false;
             //
@@ -46,7 +47,7 @@ public class Catalog {
                             -------------------------------------------------""");
                 System.out.println(product);
                 f = true;
-                System.out.println("-----------------------");
+                System.out.println(SEPARATOR);
 
             }
             if (!f)
@@ -55,27 +56,23 @@ public class Catalog {
 
         }
 
-        System.out.println("-----------------------");
+        System.out.println(SEPARATOR);
     }
 
     public void viewProducts() {
         System.out.println("");
         int i = 1;
         for (Category category : categories) {
-            boolean f = false;
-            //System.out.println("-----------------------");
+
+
             //System.out.println(category.getName()+":\n");
             for (Product product : category.getProducts()) {
-                //if (Storage.quantity.get(product.getID())>0)
+
                 System.out.println(i + "-" + product.getName() + " " + product.getPrice() + "$");
-                f = true;
+
                 i++;
             }
-            //if (!f)
-            // System.out.println("there's no any product");
 
-
-            //System.out.println("-----------------------");
         }
 
         System.out.println();
@@ -149,29 +146,30 @@ public class Catalog {
 
         boolean found = false;
         for (Category category : categories) {
-            for (Product product : category.getProducts())
+            for (Product product : category.getProducts()) {
+                int intPrice = Integer.parseInt(price);
                 switch (op) {
 
                     case "1":
-                        if (product.getPrice() > Integer.parseInt(price)) {
+                        if (product.getPrice() > intPrice) {
                             System.out.println(product);
                             found = true;
                         }
                         break;
                     case "2":
-                        if (product.getPrice() < Integer.parseInt(price)) {
+                        if (product.getPrice() < intPrice) {
                             System.out.println(product);
                             found = true;
                         }
                         break;
                     case "3":
-                        if (product.getPrice() == Integer.parseInt(price)) {
+                        if (product.getPrice() == intPrice) {
                             System.out.println(product);
                             found = true;
                         }
                         break;
                     case "4":
-                        if (product.getPrice() != Integer.parseInt(price)) {
+                        if (product.getPrice() != intPrice) {
                             System.out.println(product);
                             found = true;
                         }
@@ -179,6 +177,7 @@ public class Catalog {
 
 
                 }
+            }
 
 
         }

@@ -64,8 +64,8 @@ public class Customer {
 	
 	public void CustomerOperation() {
 		Scanner COperation = new Scanner(System.in);
-    	
-    	while(true) {
+    	boolean b=true;
+    	while(b) {
     		System.out.println("\n+------- Welcome to Customer Wizard -------+\n");
         	System.out.println("1) Browse Products");
         	System.out.println("2) Make Purchases");
@@ -129,7 +129,8 @@ public class Customer {
     			break;
     		case 6:
     			System.out.println("Thank you for using our application.");
-    			System.exit(0);
+    			b=false;
+				break;//System.exit(0);
     		}
     	}
 	}

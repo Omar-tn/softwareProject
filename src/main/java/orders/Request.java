@@ -1,11 +1,15 @@
 package orders;
 
+import org.slf4j.LoggerFactory;
 import parts.Product;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.util.Properties;
+
+import org.slf4j.Logger;
+//import org.slf4j.LoggerFactory;
 
 
 public class Request {
@@ -16,6 +20,9 @@ public class Request {
     private String carModel;
     private String preferredDate;
     private boolean confirmed;
+    private Session session;
+    private Authenticator auther;
+    private MimeMessage message;
 
     //public Request()
 
@@ -34,6 +41,7 @@ public class Request {
 
     public void email() {
 
+        Logger Logger =  LoggerFactory.getLogger(getClass().getName());
 
         try {
 
@@ -43,14 +51,14 @@ public class Request {
             properties.put("mail.smtp.auth", "true");
             properties.put("mail.smtp.starttls.enable", "true");
 
-            Session session = Session.getDefaultInstance(properties, new javax.mail.Authenticator() {
+                 session = Session.getDefaultInstance(properties,new javax.mail.Authenticator() {
                 @Override
                 protected PasswordAuthentication getPasswordAuthentication() {
                     return new PasswordAuthentication("s12029362@stu.najah.edu", "bwov xqav ekes qmfb");
                 }
             });
             //session.setDebug(true);
-            MimeMessage message = new MimeMessage(session);
+            message = new MimeMessage(session);
             String from = "s12029362@stu.najah.edu";
             message.setFrom(new InternetAddress(from));
             String to = "omar.omar5750@gmail.com";
@@ -59,7 +67,7 @@ public class Request {
             message.setText("your mesg");
             Transport.send(message);
         } catch (MessagingException m) {
-            m.printStackTrace();
+            Logger.error("",m) ;
 
 
         }
