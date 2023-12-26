@@ -6,9 +6,59 @@
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
+        <sonar.organization>m-omarsw</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+	<sonar.coverage.exclusions>
+            **/Application/Main.java,
+            **/org/example/Main.java
+        </sonar.coverage.exclusions>
+	    
     </properties>
+
+   <build>
+		<plugins>
+			<!-- The Surefire Plugin is needed to run JUnit 5 tests with Maven -->
+			<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <!-- JUnit 5 requires Surefire version 2.22.0 or higher -->
+    <version>2.22.0</version>
+</plugin>
+<plugin>
+                    <groupId>org.jacoco</groupId>
+                    <artifactId>jacoco-maven-plugin</artifactId>
+                    
+                    <executions>
+                        <!-- Prepares the property pointing to the JaCoCo runtime agent
+                        which is passed as VM argument when Maven the Surefire plugin is executed. -->
+                        <execution>
+                            <goals>
+                                <goal>prepare-agent</goal>
+                            </goals>
+                        </execution>
+                        <!-- Ensures that the code coverage report is created after
+                        all tests have been run. -->
+                        <execution>
+                            <id>generate-report</id>
+			    <phase>verify</phase>
+                            <goals>
+                                <goal>report</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+			
+			
+		</plugins>
+	</build>
+         
     <dependencies>
+	<dependency>
+	    <groupId>org.jacoco</groupId> 
+	    <artifactId>jacoco-maven-plugin</artifactId>
+	    <version>0.8.6</version>
+	</dependency>
 
         <dependency>
             <groupId>com.sun.mail</groupId>
@@ -23,22 +73,26 @@
             <scope>test</scope>
         </dependency>
 
+
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>6.10.4</version> <!-- Use the latest version available -->
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>6.10.4</version> <!-- Use the latest version available -->
-            <scope>test</scope>
-        </dependency>
+       
 
+
+
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>javax.mail</artifactId>
+            <version>1.6.2</version>
+         </dependency>
 
     </dependencies>
 
+    
 
 
     <modelVersion>4.0.0</modelVersion>
