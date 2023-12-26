@@ -11,8 +11,8 @@
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
-<!--     <plugins>
-			<!-- The Surefire Plugin is needed to run JUnit 5 tests with Maven -->
+    <plugins>
+<!-- 			<!-- The Surefire Plugin is needed to run JUnit 5 tests with Maven -->
 			<plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-surefire-plugin</artifactId>
