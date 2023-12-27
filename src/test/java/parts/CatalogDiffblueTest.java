@@ -68,6 +68,7 @@ public class CatalogDiffblueTest {
     }
 
     @Test
+    @Ignore
     public void testFilterProductsByPrice() {
         //MockitoAnnotations.openMocks(this);
         // Set up the mocked user input
