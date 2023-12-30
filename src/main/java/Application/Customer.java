@@ -3,14 +3,16 @@ package Application;
 import parts.Catalog;
 
 import java.util.Scanner;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 public class Customer {
 	private String username;
 	private String Email;
 	private int password;
 	
-	
-	
+	Logger logger = LoggerFactory.getLogger(Customer.class);
+	String invalidText = "Invalid Input";
+	String successfulText = "Updated Successfuly";
 	public Customer() {
 		super();
 		username = "";
@@ -54,7 +56,7 @@ public class Customer {
 	}
 	
 	public int equal(String username, int pass) {
-		if(this.username.equalsIgnoreCase(username) & this.password == pass) {
+		if(this.username.equalsIgnoreCase(username) && this.password == pass) {
 			return 1;
 		}else {
 			return -1;
@@ -64,73 +66,73 @@ public class Customer {
 	
 	public void CustomerOperation() {
 		Scanner COperation = new Scanner(System.in);
-    	boolean b=true;
-    	while(b) {
-    		System.out.println("\n+------- Welcome to Customer Wizard -------+\n");
-        	System.out.println("1) Browse Products");
-        	System.out.println("2) Make Purchases");
-        	System.out.println("3) View Orders History");
-        	System.out.println("4) View Installation Requests");
-        	System.out.println("5) Edit profile");
-        	System.out.println("6) Exit");
-        	System.out.println("Enter The Operation Number: ");
+    	
+    	while(true) {
+    		logger.info("\n+------- Welcome to Customer Wizard -------+\n");
+    		String cutemerOperation = "1) Browse Products" +
+    								  "2) Make Purchases" +
+    								  "3) View Orders History" +
+    								  "4) View Installation Requests" +
+    								  "5) Edit profile" +
+    								  "6) Exit" +
+    								  "Enter The Operation Number: ";
+    		logger.info(cutemerOperation);
         	// for the customer dashboard
         	int OP = COperation.nextInt();
-
         	Catalog NewCatalog = new Catalog();
     		switch(OP) {
     		case 1:
-    			System.out.println("\n+------- Browse Products -------+\n");
+    			logger.info("\n+------- Browse Products -------+\n");
     			NewCatalog.viewAllProducts();
     			break;
     		case 2:
-    			System.out.println("\n+------- Make Purchases -------+\n");
+    			logger.info("\n+------- Make Purchases -------+\n");
     			Scanner Purchase = new Scanner(System.in);
     			NewCatalog.requestInstallation(Purchase);
-    			System.out.println("Successfully");
+    			logger.info("Successfully");
 
     			break;
     		case 3:
-    			System.out.println("View Order History:");
+    			logger.info("\nView Order History:");
     			break;
     		case 4:
-    			System.out.println("View Installation Requests:");
+    			logger.info("\nView Installation Requests:");
     			break;
     		case 5:
-
-    			System.out.println("\\n+------- Your Profile -------+\\n");
+    			logger.info("\n+------- Your Profile -------+\n");
     			System.out.println("Your Username: " + this.getUsername());
     			System.out.println("Your Email: " + this.getEmail());
-    			System.out.println("1) Edit Username");
-    			System.out.println("2) Edit Email");
-    			System.out.println("3) Change Password");
+    			logger.info("\n1) Edit Username");
+    			logger.info("\n2) Edit Email");
+    			logger.info("\n3) Change Password");
     			Scanner Choise = new Scanner(System.in);
     			Scanner Operation = new Scanner(System.in);
     			int ChoiseNum = Choise.nextInt();
     			if(ChoiseNum == 1) {
-    				System.out.print("Enter New Username: ");
+    				logger.info("Enter New Username: ");
     				String NewUsername = Operation.nextLine();
     				this.setUsername(NewUsername);
-    				System.out.print("Updated Successfuly");
+    				logger.info(successfulText);
     			}else if(ChoiseNum == 2) {
-    				System.out.print("Enter New Email: ");
+    				logger.info("Enter New Email: ");
     				String NewEmail = Operation.nextLine();
     				this.setEmail(NewEmail);
-    				System.out.print("Updated Successfuly");
+    				logger.info(successfulText);
     			}else if(ChoiseNum == 3) {
-    				System.out.print("Enter New Password: ");
+    				logger.info("Enter New Password: ");
     				int NewPassword = Operation.nextInt();
     				this.setPassword(NewPassword);
-    				System.out.print("Updated Successfuly");
+    				logger.info(successfulText);
     			}else {
-    				System.out.println("Invalid Input");
+    				logger.info(invalidText);
     			}
 
     			break;
     		case 6:
-    			System.out.println("Thank you for using our application.");
-    			b=false;
-				break;//System.exit(0);
+    			logger.info("Thank you for using our application.");
+    			System.exit(0);
+    		default:
+    			logger.info(invalidText);
     		}
     	}
 	}
